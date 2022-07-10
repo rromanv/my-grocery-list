@@ -12,6 +12,10 @@ const createGroceryElement = grocery => {
   const groceryElement = document.createElement('li')
   groceryElement.innerText = grocery.value
   groceryElement.classList.add('groceryItem')
+  groceryElement.addEventListener('click', () => {
+    groceryElement.remove()
+    db.delete(grocery.key)
+  })
   return groceryElement
 }
 
