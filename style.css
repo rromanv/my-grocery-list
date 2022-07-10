@@ -12,5 +12,72 @@
 }
 
 body {
+  background-color: var(--background);
+  color: var(--foreground);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-family: 'Poppins', sans-serif;
+}
+
+.title {
+  margin: 0.5em;
+  font-size: 4em;
+  font-weight: lighter;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+}
+
+.newGroceryForm {
+  display: flex;
+}
+
+#newGrocery {
+  background-color: white;
+  color: var(--comment);
+  padding: 0.5em;
+  width: 20em;
+  font-size: 1.5em;
+  border-radius: 0.25em 0 0 0.25em;
+}
+
+#addBtn {
+  background-color: var(--accent);
+  color: var(--background);
+  padding: 0.5em;
+  font-size: 1.5em;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0.25em;
+  border-radius: 0 0.25em 0.25em 0;
+}
+
+#addBtn:hover {
+  background-color: var(--purplish);
+}
+
+#groceryList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+  border-radius: 0.5em;
+  background-color: var(--comment);
+}
+
+.groceryItem {
+  background-color: white;
+  color: var(--background);
+  margin: 0.5em;
+  width: 24em;
+  padding: 0.5em;
+  border-radius: 0.25em;
+  text-align: center;
+}
+
+.groceryItem:hover {
+  background-color: var(--purplish);
+  font-weight: bold;
 }
